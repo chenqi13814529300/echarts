@@ -30,7 +30,7 @@ export default class SocketService {
       // 浏览器不支持websocket
       return console.log('当前浏览器不支持WebSocket！');
     }
-    this.ws = new WebSocket('ws://115.29.209.198:9998');
+    this.ws = new WebSocket('ws://localhost:9998');
 
     // 连接成功
     this.ws.onopen = () => {
